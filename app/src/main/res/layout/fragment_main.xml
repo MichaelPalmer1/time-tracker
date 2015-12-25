@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowCalendar">
+
+        <CalendarView
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:dateTextAppearance="@android:style/TextAppearance.Large"
+            android:shownWeekCount="2"
+            android:layout_weight="1.0"
+            android:id="@+id/calendarView" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="-115dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursMonday1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursTuesday1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursWednesday1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursThursday1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursFriday1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/hoursTotal1" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="-45dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursMonday2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursTuesday2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursWednesday2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursThursday2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:id="@+id/hoursFriday2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/hoursTotal2" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/rowInfo">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/txtData" />
+
+        </ScrollView>
+
+    </TableRow>
+
+</TableLayout>

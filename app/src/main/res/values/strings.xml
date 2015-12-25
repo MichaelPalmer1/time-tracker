@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Time Tracker</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_truncate">Truncate</string>
+    <string name="button_record">Record</string>
+    <string name="titleHoursWorked">Hours Worked</string>
+    <string name="titleHoursLeft">Hours Left</string>
+    <string name="titleMonday">Monday</string>
+    <string name="titleTuesday">Tuesday</string>
+    <string name="titleWednesday">Wednesday</string>
+    <string name="titleThursday">Thursday</string>
+    <string name="titleFriday">Friday</string>
+    <string name="titlePayPeriod">Pay Period</string>
+    <string name="title_clockType">Clock Type</string>
+    <string name="clockIn">In</string>
+    <string name="clockOut">Out</string>
+    <string name="title_section1">Overview</string>
+    <string name="title_section2">Record Time</string>
+    <string name="title_section3">Settings</string>
+    <string name="timeIn">Time In</string>
+    <string name="timeOut">Time Out</string>
+    <string name="holiday">Holiday</string>
+    <string name="vacation">Vacation</string>
+    <string name="lunch">Lunch</string>
+    <string name="clocked">Clocked</string>
+    <string name="paid">Paid</string>
+    <string name="edit">Edit</string>
+</resources>

@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.michaeldpalmer.timetracker"
+        minSdkVersion 19
+        targetSdkVersion 19
+        versionCode 1000002
+        versionName "0.0.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-project.txt'
+        }
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    //    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:22.1.1'
+    //    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile files('libs/joda-time-2.8-javadoc.jar')
+    compile files('libs/joda-time-2.8.jar')
+}

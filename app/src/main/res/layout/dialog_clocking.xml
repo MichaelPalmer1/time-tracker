@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:weightSum="1"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="1"
+        android:id="@+id/rowTimeIn">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/btnEditIn"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/edit" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:text="@string/timeIn" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:id="@+id/timeIn"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:id="@+id/btnClock" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:id="@+id/btnHoliday"
+            android:text="@string/holiday" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:id="@+id/btnVacation"
+            android:text="@string/vacation" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:id="@+id/rowTimeOut">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/btnEditOut"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/edit" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:text="@string/timeOut" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:id="@+id/timeOut"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowLunch"
+        android:weightSum="1"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:text="@string/lunch" />
+
+        <Switch
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:id="@+id/switchLunch"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:checked="true"
+            android:textAppearance="@android:style/TextAppearance.Holo.Medium" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowClocked"
+        android:weightSum="1"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:text="@string/clocked" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="@android:color/tertiary_text_light"
+            android:id="@+id/timeClocked" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rowPaid"
+        android:weightSum="1"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:text="@string/paid" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="@android:color/tertiary_text_light"
+            android:id="@+id/timePaid" />
+
+    </TableRow>
+
+</TableLayout>
