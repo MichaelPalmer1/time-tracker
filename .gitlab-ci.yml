@@ -3,4 +3,4 @@ before_script:
 
 build_app:
   type: build
-  script: ./gradlew assembleDebug
+  script: ./gradlew assembleRelease
