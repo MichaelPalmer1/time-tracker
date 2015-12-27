@@ -1,6 +1,10 @@
 before_script:
   - export ANDROID_HOME="/opt/android-sdk"
 
-dev:
+stages:
+  - build
+
+build_job:
+  stage: build
   script:
     - ./gradlew assembleDebug
