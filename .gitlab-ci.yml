@@ -15,5 +15,5 @@ deploy_job:
   stage: deploy
   script:
     - echo "Assembling..."
-    - ./gradlew assembleDebug
+    # - ./gradlew assembleDebug
     - echo "Assembled"
