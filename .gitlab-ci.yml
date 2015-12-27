@@ -1,5 +1,5 @@
-before_script:
-  - export ANDROID_HOME="/opt/android-sdk"
+# before_script:
+  # - export ANDROID_HOME="/opt/android-sdk"
 
 stages:
   - build
@@ -7,13 +7,8 @@ stages:
 
 build_job:
   stage: build
-  script:
-    - echo "Building..."
-    - echo "Built."
+  script: "echo 'Building...'"
 
 deploy_job:
   stage: deploy
-  script:
-    - echo "Assembling..."
-    # - ./gradlew assembleDebug
-    - echo "Assembled"
+  script: "echo 'Assembled'"
