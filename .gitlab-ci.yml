@@ -3,8 +3,17 @@ before_script:
 
 stages:
   - build
+  - deploy
 
 build_job:
   stage: build
   script:
+    - echo "Building..."
+    - echo "Built."
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Assembling..."
     - ./gradlew assembleDebug
+    - echo "Assembled"
