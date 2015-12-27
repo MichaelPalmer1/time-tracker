@@ -1,9 +1,6 @@
 before_script:
   - export ANDROID_HOME="/opt/android-sdk"
 
-production:
-  type: deploy
-  script:
-    - echo 'Building...'
-    - echo $ANDROID_HOME
-    - echo  'Built'
+build_app:
+  type: build
+  script: ./gradlew assembleDebug
