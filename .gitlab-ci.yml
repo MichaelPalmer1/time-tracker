@@ -1,14 +1,9 @@
-# before_script:
-  # - export ANDROID_HOME="/opt/android-sdk"
+before_script:
+  - export ANDROID_HOME="/opt/android-sdk"
 
-stages:
-  - build
-  - deploy
-
-build_job:
-  stage: build
-  script: "echo 'Building...'"
-
-deploy_job:
-  stage: deploy
-  script: "echo 'Assembled'"
+production:
+  type: deploy
+  script:
+    - echo 'Building...'
+    - echo $ANDROID_HOME
+    - echo  'Built'
